@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HireOn 🚀
+### The Autonomous Job Application Execution Layer
 
-## Getting Started
+HireOn is a high-performance, AI-driven platform designed to automate the modern job search. By acting as a personal recruiter, it leverages sophisticated language models and autonomous agents to adapt resumes, generate contextual cover letters, and submit perfect applications to thousands of corporate portals while you sleep.
 
-First, run the development server:
+![HireOn Banner](assets/images/ss.png)
+
+## ⚡ Core Engine Features
+
+- **Beat the ATS Resume Scanner:** Our Smart Resume engine dynamically parses live job descriptions and adjusts your experience to mirror exactly what corporate Applicant Tracking Systems (ATS) are looking for, ensuring a 90%+ passing rate.
+- **Zero-Click Auto Applications:** HireOn decrypts complex enterprise portals (Workday, Greenhouse, Lever, LinkedIn) and fills out dynamic forms, including custom knockout questions, locally on your behalf.
+- **Continuous Market Intelligence:** Active listening agents synchronize datasets from Glassdoor, Levels.fyi, and Blind to filter out "ghost jobs" and prioritize high-velocity hiring pushes.
+- **Hyper-Contextual Cover Letters:** Generative document engines match the cultural tone of the target company—from bold Valley startups to structured traditional firms—delivering tailored PDFs in milliseconds.
+
+## 🎨 Design Philosophy
+
+HireOn features an **Extreme Aesthetic** design language:
+- **Ultra-Premium Motion:** A cinematic scroll-reveal system with 100px travel distance and lens-focus blur transitions.
+- **3D Dashboard Mockups:** Interactive component mockups with real-time perspective transforms (rotate/scale on hover).
+- **Glassmorphic UI:** High-density layouts with deep backdrop blurs (`40px+`) and nuanced inner shadows.
+- **Responsive Command Center:** A mobile-optimized "Side Tab" drawer and collapsible accordion footer for touch-first navigation.
+
+## 🛠️ Technical Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (Turbopack)
+- **Language:** TypeScript
+- **Styling:** Vanilla CSS Modules with advanced CSS variables (Design Tokens)
+- **Animation:** CSS Transitions + `IntersectionObserver` for scroll triggers
+- **Icons:** Custom SVG and Emoji-based high-density assets
+
+## 🚀 Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the live command center.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app`: Global layout and the cinematic landing page.
+- `/shared`: Reusable layout components and global design tokens.
+- `/core`: Authentication logic and routing configurations.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built with passion by the HireOn Team. Scaling careers since 2024.

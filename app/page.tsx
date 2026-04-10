@@ -66,8 +66,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`${styles.wrapper} fade-in`}>
-      {/* Persistent Global Header */}
+    <>
+      {/* Absolute Persistent Global Header - Root Level */}
       <header className={styles.header}>
         <div className={styles.container}>
           <nav className={styles.navbar}>
@@ -75,8 +75,7 @@ export default function Home() {
               <Image 
                 src={logo} 
                 alt="HireOn Logo" 
-                height={32} 
-                priority 
+                height={28} 
                 style={{ objectFit: 'contain', width: 'auto' }}
               />
             </a>
@@ -105,30 +104,11 @@ export default function Home() {
             </div>
           </nav>
 
-          {/* Mobile Navigation Menu */}
-          <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ""}`}>
-            <div className={styles.mobileDrawer}>
-              <button className={styles.mobileCloseBtn} onClick={() => setIsMenuOpen(false)}>
-                <span>✕</span>
-              </button>
-              <div className={styles.mobileLinks}>
-                <a href="#manifesto" onClick={() => setIsMenuOpen(false)}>Reality</a>
-                <a href="#process" onClick={() => setIsMenuOpen(false)}>Process</a>
-                <a href="#compare" onClick={() => setIsMenuOpen(false)}>Compare</a>
-                <a href="#features" onClick={() => setIsMenuOpen(false)}>Features</a>
-                <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Feedback</a>
-                <a href="#faq" onClick={() => setIsMenuOpen(false)}>FAQ</a>
-              </div>
-              <div className={styles.mobileActions}>
-                <Link href={AppRoutes.auth.login} className={styles.mobileSignIn} onClick={() => setIsMenuOpen(false)}>Sign In</Link>
-                <Link href={AppRoutes.auth.register} className={styles.mobileCta} onClick={() => setIsMenuOpen(false)}>Get Started Free</Link>
-              </div>
-            </div>
-          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
+      <div className={`${styles.wrapper} fade-in`}>
+        {/* Hero Section */}
       <div className={styles.container}>
         <main className={styles.hero}>
           <div className={styles.heroBackground}></div>
@@ -813,6 +793,30 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Navigation Menu - Moved to Root for total stability */}
+      {isMenuOpen && (
+        <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ""}`}>
+          <div className={styles.mobileDrawer}>
+            <button className={styles.mobileCloseBtn} onClick={() => setIsMenuOpen(false)}>
+              <span>✕</span>
+            </button>
+            <div className={styles.mobileLinks}>
+              <a href="#manifesto" onClick={() => setIsMenuOpen(false)}>Reality</a>
+              <a href="#process" onClick={() => setIsMenuOpen(false)}>Process</a>
+              <a href="#compare" onClick={() => setIsMenuOpen(false)}>Compare</a>
+              <a href="#features" onClick={() => setIsMenuOpen(false)}>Features</a>
+              <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Feedback</a>
+              <a href="#faq" onClick={() => setIsMenuOpen(false)}>FAQ</a>
+            </div>
+            <div className={styles.mobileActions}>
+              <Link href={AppRoutes.auth.login} className={styles.mobileSignIn} onClick={() => setIsMenuOpen(false)}>Sign In</Link>
+              <Link href={AppRoutes.auth.register} className={styles.mobileCta} onClick={() => setIsMenuOpen(false)}>Get Started Free</Link>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
+    </>
   );
 }
