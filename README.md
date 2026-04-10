@@ -3,7 +3,7 @@
 
 HireOn is a high-performance, AI-driven platform designed to automate the modern job search. By acting as a personal recruiter, it leverages sophisticated language models and autonomous agents to adapt resumes, generate contextual cover letters, and submit perfect applications to thousands of corporate portals while you sleep.
 
-![HireOn Banner](assets/images/ss.png)
+<img width="1280" height="726" alt="image" src="https://github.com/user-attachments/assets/6fc6ae09-51dd-4a65-a7e4-6174f2e334cb" />
 
 ## ⚡ Core Engine Features
 
